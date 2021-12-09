@@ -7,5 +7,5 @@ WORKDIR /var/www/html
 RUN unzip Moderna.zip
 RUN cp -rvf Moderna/* .
 RUN rm -rf Moderna/ Moderna.zip
-CMD ["/usr/sbin/httpd", ".D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", ".D", "FOREGROUND" "run"]
 EXPOSE 8080
