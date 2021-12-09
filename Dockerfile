@@ -1,6 +1,5 @@
 FROM centos:latest
-ENTRYPOINT ["/sbin/tini", "--"]
-yum install -y httpd \
+RUN yum install -y httpd \
 zip \
 unzip
 ADD https://bootstrapmade.com/content/templatefiles/Moderna/Moderna.zip /var/www/html
