@@ -1,6 +1,4 @@
 - hosts: all
-  #remote_user: root
-
   tasks:
   - name: create container
     shell: docker container run -itd --name simpleproject-container -p 9000:8080 dhire/simpleproject
