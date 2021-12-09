@@ -1,4 +1,5 @@
 FROM centos:latest
+ENTRYPOINT ["/sbin/tini", "--"]
 yum install -y httpd \
 zip \
 unzip
