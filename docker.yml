@@ -1,4 +1,4 @@
 - hosts: all
   task:
-   - name: create container
-     shell: docker container run -itd --name simpleproject-container -p 9000:8080 dhire/simpleproject
+    - name: create container
+      shell: docker container run -itd --name simpleproject-container -p 9000:8080 dhire/simpleproject
