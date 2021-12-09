@@ -5,7 +5,7 @@
   - name: remove container
     shell: docker container rm simpleproject-container
   - name: remove docker image
-    shell: docker image rmi dhire/simpleproject-container
+    shell: docker image rmi dhire/simpleproject
   - name: create container
     shell: docker container run -itd --name simpleproject-container -p 9000:8080 dhire/simpleproject
     
