@@ -8,4 +8,4 @@ RUN unzip Moderna.zip
 RUN cp -rvf Moderna/* .
 RUN rm -rf Moderna/ Moderna.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 8080
+EXPOSE 80
